@@ -7,3 +7,5 @@ The NASA provide a special food for the astronaut but is that food enough for th
 # 3 Testing robotics:
 Nowadays, Robots are the main important technologies in our life, the ARTEMIS mission will need an intelligent robot to help astronauts with their research for example the water research.  There is a wisdom says that more automation is always better. After all, with automation, the job usually gets done faster, and the more tasks (or sub-tasks) robots can do on their own, the less the workload on the operator for example water research, supervising, prevent dangers and many other tasks. 
 # 4 Assuring data transmission and communication
+#### Lora communication protocol:
+The term LoRa stands for Long Range. It is a long-range, low power wireless platform that has become the de-facto technology for Internet of Things (IoT) networks worldwide. LoRa is a spread spectrum modulation technique derived from chirp spread spectrum (CSS) technology. LoRa was introduced by a company called Semtech.
