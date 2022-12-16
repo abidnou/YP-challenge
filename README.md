@@ -12,7 +12,7 @@ The term LoRa stands for Long Range. It is a long-range, low power wireless plat
 #### Arduino Lora transmitter with DHT11 sensor:
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
 The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Sensor and LoRa SX1278 Module. ![The circuit diagram is given below. Assemble the circuit as shown in the figure below](https://how2electronics.com/wp-content/uploads/2019/12/Arduino-LoRa-SX1278-DHT11-Transmitter.jpg)
-#### ESP32  Lora reciever :
+#### ESP32  Lora receiver :
  The transmitter & Receiver circuit is the same. You can assemble the circuit in a breadboard. Assemble a pair of circuits so that one will be the transmitter and the other will be a receiver.The connection is fairly simple. Similarly, connect the Lora SX1278 & ESP32 as follows
  ![esp32 pins](https://user-images.githubusercontent.com/96426652/208136175-775a2b8e-f87e-4c71-9946-4cc02249e112.PNG)
  ![esp32 ](https://how2electronics.com/wp-content/uploads/2020/04/ESP32-LoRa-SX1278-1.jpg)
