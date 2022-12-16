@@ -18,7 +18,7 @@ The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Se
  The transmitter & Receiver circuit is the same. You can assemble the circuit in a breadboard. Assemble a pair of circuits so that one will be the transmitter and the other will be a receiver.The connection is fairly simple. Similarly, connect the Lora SX1278 & ESP32 as follows
  ![esp32 pins](https://user-images.githubusercontent.com/96426652/208136175-775a2b8e-f87e-4c71-9946-4cc02249e112.PNG)
  ![esp32 ](https://how2electronics.com/wp-content/uploads/2020/04/ESP32-LoRa-SX1278-1.jpg)
-## Prototype:
+## Monnebase model:
 A model made with unreal engine 5 to simulate the vision of ARTEMIS mission. 
 https://drive.google.com/file/d/195v-kcvf3P5D0uqjG_R6KU5ltv3sxu8Q/view?usp=share_link
 
