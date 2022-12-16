@@ -37,7 +37,7 @@ The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Se
 >void loop() 
 >{
  > temp = dht.readTemperature();//
- > hum = dht.readHumidity();
+ > hum = dht.readHumidity();//
  
  > Serial.println("Sending packet: ");//
  
