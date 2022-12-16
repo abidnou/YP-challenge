@@ -11,53 +11,6 @@ Nowadays, Robots are the main important technologies in our life, the ARTEMIS mi
 The term LoRa stands for Long Range. It is a long-range, low power wireless platform that has become the de-facto technology for Internet of Things (IoT) networks worldwide. LoRa is a spread spectrum modulation technique derived from chirp spread spectrum (CSS) technology. LoRa was introduced by a company called Semtech.The basic principle is that information is encoded using chirp (a gradual increase or decrease in the frequency of the carrier wave over time). Before sending a message, the LoRa transmitter will send out a chirp signal to check that the band is free to send the message. Once the LoRa receiver has picked up the preamble chirp from the transmitter, the end of the preamble is signalled by the reverse chirp, which tells the LoRa transmitter that is it clear to begin transmission.
 #### Arduino Lora transmitter with DHT11 sensor:
 The DHT11 is a basic, ultra low-cost digital temperature and humidity sensor. It uses a capacitive humidity sensor and a thermistor to measure the surrounding air, and spits out a digital signal on the data pin (no analog input pins needed).
-The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Sensor and LoRa SX1278 Module (images).
->#include <SPI.h>
->#include <LoRa.h>
->#include "DHT.h"
->#define DHTPIN A0     
- > #define DHTTYPE DHT11   
- 
-> DHT dht(DHTPIN, DHTTYPE);
-> int hum;
-> float temp; //Stores temperature value
- 
->void setup() {    
-  >Serial.begin(9600);
-  >dht.begin();
-  >while (!Serial);
-  >Serial.println("LoRa Sender");
- 
-  >if (!LoRa.begin(433E6)) {
-    >Serial.println("Starting LoRa failed!");//
-    >while (1);
-  >}
->}
- 
->void loop() 
->{
- > temp = dht.readTemperature();//
- > hum = dht.readHumidity();//
- 
- > Serial.println("Sending packet: ");//
- 
- > // send packet
-  >LoRa.beginPacket();
-  >LoRa.print("Humidity: ");
- > LoRa.print(hum);
- > LoRa.print("%");
- > LoRa.print(" Temperature:");
- > LoRa.print(temp);
- > LoRa.print("C");
-  
-  >Serial.print("Humidity: ");
-  >Serial.print(hum);
-  >Serial.print("%");
-  >Serial.print(" Temperature:");
-  >Serial.print(temp);
-  >Serial.println("C");
-  >Serial.println(""); 
- 
-  >LoRa.endPacket();
-  >delay(1000);
->}
+The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Sensor and LoRa SX1278 Module. ![The circuit diagram is given below. Assemble the circuit as shown in the figure below](https://how2electronics.com/wp-content/uploads/2019/12/Arduino-LoRa-SX1278-DHT11-Transmitter.jpg)
+
+
