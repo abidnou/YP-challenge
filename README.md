@@ -29,19 +29,19 @@ The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Se
   >Serial.println("LoRa Sender");
  
   >if (!LoRa.begin(433E6)) {
-    >Serial.println("Starting LoRa failed!");
+    >Serial.println("Starting LoRa failed!");//
     >while (1);
   >}
 >}
  
 >void loop() 
 >{
- > temp = dht.readTemperature();
+ > temp = dht.readTemperature();//
  > hum = dht.readHumidity();
  
- > Serial.println("Sending packet: ");
+ > Serial.println("Sending packet: ");//
  
-  // send packet
+ > // send packet
   >LoRa.beginPacket();
   >LoRa.print("Humidity: ");
  > LoRa.print(hum);
