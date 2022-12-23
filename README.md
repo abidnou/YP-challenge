@@ -19,6 +19,6 @@ The transmitter part contains Arduino UNO Board, DHT11 Humidity & Temperature Se
  ![esp32 pins](https://user-images.githubusercontent.com/96426652/208136175-775a2b8e-f87e-4c71-9946-4cc02249e112.PNG)
  ![esp32 ](https://how2electronics.com/wp-content/uploads/2020/04/ESP32-LoRa-SX1278-1.jpg)
 ## Monnebase model:
-A model made with unreal engine 5 to simulate the vision of ARTEMIS mission. 
+A model made with unreal engine 5 to simulate the vision of the ARTEMIS mission. 
 https://drive.google.com/file/d/195v-kcvf3P5D0uqjG_R6KU5ltv3sxu8Q/view?usp=share_link
 
